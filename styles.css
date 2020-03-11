@@ -10,7 +10,7 @@ header {
 
 header #nav-left {
     display: flex;
-    width: 150px; 
+    width: 150px;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -24,7 +24,7 @@ header #nav-right {
 
 header a {
     text-decoration: none;
-    color: rgb(66, 66, 66);
+    color: #5f6368;
 }
 
 header nav a:hover {
@@ -59,14 +59,21 @@ form {
 }
 
 #search-bar {
-    --search-bar-height: 40px;
+    background-image: url(https://image.flaticon.com/icons/svg/49/49116.svg),
+        url(https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg);
+    background-position: 15px 15px, 460px 11px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 14px, 15px;
+    --search-bar-height: 45px;
     width: 500px;
     height: var(--search-bar-height);
-    border: 1px solid rgb(180, 180, 180);
+    border: 1px solid rgb(230, 230, 230);
     border-radius: calc(var(--search-bar-height) / 2);
-    padding: 2px 32px 2px 32px;
+    padding: 2px 45px 2px 45px;
     margin: 32px;
-    box-sizing: border-box;    
+    box-sizing: border-box;
+    font-size: 18px;
+    outline-width: 0;
 }
 
 #search-bar:hover {
@@ -87,5 +94,40 @@ input[type=submit] {
     border: 1px solid #f2f2f2;
     border-radius: 5px;
     padding: 10px 15px 10px 15px;
+}
 
+footer {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    font-size: 14px;
+    padding: 15px 0px 15px 0px;
+    border-top: 1px solid rgb(230, 230, 230);
+}
+
+#footer-left {
+    display: flex;
+    width: 325px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footer-right {
+    display: flex;
+    width: 225px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #5f6368;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
