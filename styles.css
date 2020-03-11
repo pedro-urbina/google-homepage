@@ -96,6 +96,11 @@ input[type=submit] {
     padding: 10px 15px 10px 15px;
 }
 
+input[type=submit]:hover {
+    border-color: #e2e2e2;
+    color: black;
+}
+
 footer {
     background-color: #f2f2f2;
     display: flex;
